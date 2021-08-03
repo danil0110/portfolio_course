@@ -27,10 +27,13 @@
     &-progress {
       margin-top: 20px;
       height: 14px;
-      background-color: #e8e4de;
       border-radius: 4px;
+      background-color: #e8e4de;
 
-      &_filled {
+      span {
+        display: block;
+        height: 14px;
+        border-radius: 4px;
         background-color: $main-color;
       }
     }
