@@ -1,0 +1,37 @@
+.technologies {
+  padding-top: 120px;
+
+  &__wrapper {
+    display: grid;
+    margin-top: 60px;
+    padding: 0 10px;
+    grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+    grid-auto-rows: minmax(270px, auto);
+    gap: 13px;
+  }
+
+  &__item {
+    padding: 30px;
+    border: 1px solid #000;
+
+    &-img {
+      display: flex;
+      align-items: center;
+      height: 65px;
+
+      img {
+        max-height: 100%;
+      }
+    }
+
+    h3 {
+      margin-top: 20px;
+    }
+
+    &-text {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
