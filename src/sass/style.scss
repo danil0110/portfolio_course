@@ -21,22 +21,6 @@
   margin: 25px auto 0;
 }
 
-.section-title {
-  position: relative;
-  text-align: center;
-  @include before-circle;
-
-  &::before {
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-  }
-}
-
-.section-subtitle {
-  text-align: center;
-}
-
 @import './blocks/promo';
 @import './blocks/title';
 @import './blocks/button';
@@ -46,3 +30,4 @@
 @import './blocks/resume';
 @import './blocks/technologies';
 @import './blocks/levels';
+@import './blocks/projects';
