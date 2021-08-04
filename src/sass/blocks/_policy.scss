@@ -1,0 +1,64 @@
+.policy {
+  margin: 60px 0;
+
+  h1 {
+    text-align: center;
+  }
+
+  ol {
+    counter-reset: list-item;
+  }
+
+  .main {
+    list-style-position: inside;
+
+    & > li {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 20px;
+
+      &::marker {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      h2 {
+        display: inline-block;
+      }
+    }
+
+    &__nested-ol {
+      list-style: none;
+      padding-left: 50px;
+
+      & > li {
+        margin-bottom: 5px;
+
+        &::marker {
+          counter-increment: list-item;
+          content: counters(list-item, '.') '. ';
+        }
+      }
+
+      & .main__nested-ol {
+        margin-top: 5px;
+        padding-left: 0;
+      }
+    }
+
+    &__nested-ul {
+      margin-top: 5px;
+      list-style-type: none;
+      padding-left: 0;
+
+      & > li {
+        padding-left: 5px;
+        margin-bottom: 5px;
+
+        &::marker {
+          content: '-';
+        }
+      }
+    }
+  }
+}
