@@ -50,7 +50,8 @@
     gap: 20px 50px;
 
     &-item {
-      display: flex;
+      display: grid;
+      grid-template-columns: 36px 1fr;
       gap: 25px;
     }
 

@@ -2,6 +2,7 @@ const hamburgerBtn = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const closeBtn = document.querySelector('.menu__close');
 const overlay = document.querySelector('.menu__overlay');
+const menuLinks = menu.querySelectorAll('.menu__item a');
 
 function openMenu() {
     menu.classList.add('active');
@@ -10,6 +11,10 @@ function openMenu() {
 function closeMenu() {
     menu.classList.remove('active');
 }
+
+menuLinks.forEach((item) => {
+    item.addEventListener('click', closeMenu);
+});
 
 hamburgerBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
