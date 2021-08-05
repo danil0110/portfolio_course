@@ -126,7 +126,11 @@
       <div class="container">
         <div class="about__wrapper">
           <div class="about__photo">
-            <img src="./img/photos/photo.jpg" alt="photo" />
+            <picture>
+              <source media="(max-width: 576px)" srcset="./img/photos/photo-min.jpg" />
+              <source media="(min-width: 577px)" srcset="./img/photos/photo.jpg" />
+              <img src="./img/photos/photo.jpg" alt="photo" />
+            </picture>
           </div>
           <div class="about__info">
             <h2 class="title title_fz16 about__title">Про меня</h2>
@@ -485,7 +489,11 @@
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__photo">
-            <img src="./img/photos/photo.jpg" alt="photo" />
+            <picture>
+              <source media="(max-width: 576px)" srcset="./img/photos/photo-min.jpg" />
+              <source media="(min-width: 577px)" srcset="./img/photos/photo.jpg" />
+              <img src="./img/photos/photo.jpg" alt="photo" />
+            </picture>
           </div>
           <div class="contacts__info">
             <h2 class="title title_fz16 contacts__title">Контакты</h2>
