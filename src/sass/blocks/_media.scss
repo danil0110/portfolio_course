@@ -93,6 +93,14 @@
   .levels {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .prices {
+    &__list {
+      grid-template-columns: repeat(auto-fit, 320px);
+      justify-content: space-between;
+      padding: 0 0 0 25px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -107,7 +115,7 @@
   }
 
   .divider {
-    margin-top: 0;
+    margin-top: 15px;
   }
 
   .promo {
@@ -163,6 +171,13 @@
       margin-top: 40px;
       justify-content: center;
       row-gap: 20px;
+    }
+  }
+
+  .prices {
+    &__list {
+      margin-top: 20px;
+      justify-content: center;
     }
   }
 }
@@ -233,5 +248,11 @@
 
   .levels {
     grid-template-columns: 1fr;
+  }
+
+  .prices {
+    &__list {
+      grid-template-columns: repeat(auto-fit, 260px);
+    }
   }
 }

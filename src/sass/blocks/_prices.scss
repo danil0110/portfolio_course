@@ -18,12 +18,14 @@
     &-head {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+      gap: 10px;
 
       span {
         font-weight: bold;
         font-size: 14px;
         line-height: 21px;
+        flex-shrink: 0;
       }
     }
 
